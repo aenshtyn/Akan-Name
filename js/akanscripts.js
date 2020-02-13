@@ -1,29 +1,18 @@
-function akanName() {
-  var bday = document.getElementById("birthday").value;
-  if (bday % 4 == 0 )
-}
+function akanName(bday, century, year, month, day, sex, date,)
 {
-    alert(bday+" is in a leap year");
-  }
-  else
-  {
-    alert(bday+" is not a leap year");  
-  }
-}
-function leapYear(year){
-   var result;
-   year = parseInt(document.getElementById("isYear").value);
-   if (years/400){
-     result = true
-   }
-   else if(years/100){
-     result = false
-   }
-   else if(years/4){
-     result= true
-   }
-   else{
-     result= false
-   }
-   return result
-}
+  var bday = document.getElementById("birthday").value;
+  var century = parseInt(bday(str.substring 0,1))
+  var year = parseInt(bday(str.substring 2,3))
+  var month = parseInt(bday(str.substring 5,6))
+  var day = parseInt(bday(str.substring 8,9))
+  var sex = document.getElementById("Gender").value;
+  var date = function {
+    ((((century/4) - 2 * century - 1) + ((5 * year/4))
+              + ((26 * (month + 1) / 10)) + day) % 7)
+            }
+
+  var outputText = "your birthday is on " + date + ".";
+  saySomething(outputText);
+
+
+  document.getElementById('result').innerHTML = "<h1>My name is:</h1><div class='alert alert-success'><h2>"akan name"</h2></div>"
