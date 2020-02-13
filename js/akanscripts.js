@@ -1,5 +1,6 @@
-function akanName(bday, century, year, month, day, sex, date,)
-{
+function akanName(){
+
+
   var bday = document.getElementById("birthday").value;
   var century = parseInt(bday(str.substring 0,1))
   var year = parseInt(bday(str.substring 2,3))
@@ -10,6 +11,7 @@ function akanName(bday, century, year, month, day, sex, date,)
     ((((century/4) - 2 * century - 1) + ((5 * year/4))
               + ((26 * (month + 1) / 10)) + day) % 7)
             }
+            return ;
 
   var outputText = "your birthday is on " + date + ".";
   saySomething(outputText);
