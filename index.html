@@ -1,15 +1,35 @@
 <!DOCTYPE html>
 <html>
+<head>
+  <meta charset="utf-8">
+  <title>Week 2 Project</title>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <script src = "js/akanscripts.js"></script>
+
   <head>
-    <meta charset="utf-8">
-    <title>Week 2 Project</title>
-     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-     <html>
-       <head>
-         <title>Akan Name Generator</title>
-       </head>
-       <body>
-         <h1>Akan Name Generator</h1>
-         <script src="js/scripts.js"></script>
-       </body>
-     </html>
+    <title>Akan Name Generator</title>
+  </head>
+  <body>
+    <h1>Akan Name Generator</h1>
+
+    <form>
+      Your Birthday
+      <br><input type="text" name="birthday" id="birthday"><br>
+      Gender
+      <div>
+      Male <input type="radio" name="gender" value="male" id= "gender">
+      Female <input type="radio" name="gender" value="female" id = "gender" >
+      <div>
+      <button onclick="akanName()">My Akan Name!!</button>
+    </div>
+    </div>
+    </form>
+    <h3>Result:</h3>
+
+    <div id = "output">
+    <iframe name="result" ></iframe>
+
+    </div>
+
+</body>
+</html>
