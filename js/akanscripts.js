@@ -2,14 +2,15 @@ function akanName(){
 
 
   var bday = document.getElementById("birthday").value;
-  var century = parseInt(bday(str.substring 0,1))
-  var year = parseInt(bday(str.substring 2,3))
-  var month = parseInt(bday(str.substring 5,6))
-  var day = parseInt(bday(str.substring 8,9))
+  var Bdate = bday.toString();
+  var century = Bdate.substring (0,2);
+  var year = Bdate.substring (2,4);
+  var month = Bdate.substring (5,7);
+  var day = Bdate.substring (8,9);
   var sex = document.getElementById("Gender").value;
   var boy = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"]
   var girl = ["Akosua", "Adwoa", "Abeena", "Akua", "Yaa", "Afua", "Ama"]
-  var date = function {
+  var date =
     ((((century/4) - 2 * century - 1) + ((5 * year/4))
               + ((26 * (month + 1) / 10) + day) % 7)
             }
@@ -25,3 +26,9 @@ if (date === 0 && sex === male ) {
 
 
   document.getElementById('result').innerHTML = "<h1>My name is:</h1><div class='alert alert-success'><h2>"akan name"</h2></div>"
+
+
+
+  var theBday = document.getElementById('resultBday');
+    theBday.innerHTML = multiply;
+}
