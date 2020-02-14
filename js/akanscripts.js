@@ -7,15 +7,19 @@ function akanName(){
   var month = parseInt(bday(str.substring 5,6))
   var day = parseInt(bday(str.substring 8,9))
   var sex = document.getElementById("Gender").value;
-  var boy = (Kwasi, Kwadwo, Kwabena, Kwaku, Yaw, Kofi, Kwame)
-  var girl = (Akosua, Adwoa, Abeena, Akua, Yaa, Afua, Ama)
+  var boy = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"]
+  var girl = ["Akosua", "Adwoa", "Abeena", "Akua", "Yaa", "Afua", "Ama"]
   var date = function {
     ((((century/4) - 2 * century - 1) + ((5 * year/4))
               + ((26 * (month + 1) / 10) + day) % 7)
             }
-return date, century, year, month, day, sex;
+return date, sex;
 
 
+
+if (date === 0 && sex === male ) {
+  outputText = "Kwasi"
+}
   var outputText = "your birthday is on " + date + ".";
   saySomething(outputText);
 
