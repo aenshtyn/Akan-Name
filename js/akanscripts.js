@@ -11,7 +11,8 @@ function akanName(){
     ((((century/4) - 2 * century - 1) + ((5 * year/4))
               + ((26 * (month + 1) / 10)) + day) % 7)
             }
-            return ;
+return date, century, year, month, day, sex;
+
 
   var outputText = "your birthday is on " + date + ".";
   saySomething(outputText);
