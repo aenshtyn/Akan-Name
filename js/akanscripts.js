@@ -9,7 +9,7 @@ function akanName(){
   var sex = document.getElementById("Gender").value;
   var date = function {
     ((((century/4) - 2 * century - 1) + ((5 * year/4))
-              + ((26 * (month + 1) / 10)) + day) % 7)
+              + ((26 * (month + 1) / 10) + day) % 7)
             }
 return date, century, year, month, day, sex;
 

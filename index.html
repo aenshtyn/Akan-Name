@@ -14,7 +14,7 @@
   </head>
   <body>
     <div class ="container">
-      
+
       <div class = "jumbotron">
 
 
@@ -48,33 +48,37 @@
 
 
 
-        </form>
-        <h3>Result:</h3>
+          </form>
+          <h3>Result:</h3>
 
-        <div id = "output">
-          <iframe name="result" ></iframe>
+          <div id = "output">
+            <iframe name="result" ></iframe>
+          </div>
         </div>
       </div>
-    </div>
 
 
 
 
       <div class=" jumbotron">
         <h1>Feedback</h1>
-        <p>You can give us your feedback on how your name made you feel. </p>
-        <form>
-          <input type="text" name="feedback" value="userfeedback">
+        <form action="/action_page.php" id="usrform">
+          Name: <input type="text" name="username">
+
         </form>
+        <br>
+        <textarea rows="5 rem" cols="50rem" name="comment" form="usrform"> You can type here. ...</textarea>
+          <br><input type="submit"></br>
 
 
+
+        </div>
       </div>
-    </div>
 
-    <footer>
+      <footer>
 
 
-    </footer>
+      </footer>
 
-  </body>
-  </html>
+    </body>
+    </html>
