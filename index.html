@@ -33,57 +33,42 @@
           needed below so that we can calculate and get you your akan name</p>
 
           <form>
-            <div class=" nameGenerator">
+            <p>On what day of the week were you born?</p>
+            <b>
+
+            <p>Enter your birthday and Gender</b> (then hit the &quot;Update&quot; button):</p>
+
+            <form>
+              <p>Numeric Month (1-12): <input TYPE="text" NAME="month" SIZE="2"> </p>
+              <p>Day of Month (1-31): <input TYPE="text" NAME="day" SIZE="2"> </p>
+              <p>Year (eg. 1960): <input TYPE="text" NAME="year" SIZE="4"> </p>
+              <p>Male <input type="radio" name="gender" value="male" id= "male" required></p>
+              <p>Female <input type="radio" name="gender" value="female" id = "female" required></p>
+              <p><input TYPE="button" VALUE="Update" ONCLICK="compute(this.form)"> <input TYPE="reset"
+              VALUE="Clear"> </p>
+              <p>Date of Birth: <input TYPE="text" NAME="result1" SIZE="18"> </p>
+              <p>Akan Name: <input TYPE="text" NAME="result2" SIZE="18"> </p>
+            </form>
+
+    </form>
 
 
-              Your Birthday
-              <br><input type="date" name="birthday" id="birthday"><br>
-              <br>Gender</br>
-              Male <input type="radio" name="gender" value="male" id= "gender">
-              Female <input type="radio" name="gender" value="female" id = "gender" >
-              <br>
-              <button onclick="akanName()">My Akan Name!!</button>
-              <input type="reset">
-            </br>
 
 
+        <div class=" jumbotron">
+
+          <h1>Feedback</h1>
+          <form action="/action_page.php" id="usrform">
+            Name: <input type="text" name="username">
 
           </form>
-          <h3>Result:</h3>
-
-          <div id = "output">
-            <iframe name="result" >
-
-              <p id="resultBday">
-
-              </p></iframe>
-
-          </div>
-        </div>
-      </div>
-
-
-
-
-      <div class=" jumbotron">
-        <h1>Feedback</h1>
-        <form action="/action_page.php" id="usrform">
-          Name: <input type="text" name="username">
-
-        </form>
-        <br>
-        <textarea rows="5 rem" cols="50rem" name="comment" form="usrform"> You can type here. ...</textarea>
+          <br>
+          <textarea rows="5 rem" cols="50rem" name="comment" form="usrform"> You can type here. ...</textarea>
           <br><input type="submit"></br>
 
 
 
         </div>
       </div>
-
-      <footer>
-
-
-      </footer>
-
-    </body>
-    </html>
+</div>
+</html>
