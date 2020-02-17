@@ -8,6 +8,7 @@ function akanName(){
   var sex = document.getElementById("Gender").value;
   var boy = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"]
   var girl = ["Akosua", "Adwoa", "Abeena", "Akua", "Yaa", "Afua", "Ama"]
+  var days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
   var date =
     ((((century/4) - 2 * century - 1) + ((5 * year/4))
               + ((26 * (month + 1) / 10) + day) % 7)-1;
