@@ -4,7 +4,10 @@
 
 #### Webpage that provides user with their Akan name based on their birthdarte inputs, {07 Feb 2020}
 
-#### By **Mohamed Mohamed**
+#### By
+
+**Mohamed Mohamed**
+**0714347036**
 
 ## Description
 
