@@ -1,33 +1,66 @@
-function akanName(){
-  var bday = document.getElementById("birthday").value;
-  var Bdate = bday.toString();
-  var century = Bdate.substring (0,2);
-  var year = Bdate.substring (2,4);
-  var month = Bdate.substring (5,7);
-  var day = Bdate.substring (8,9);
-  var sex = document.getElementById("Gender").value;
-  var boy = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"]
-  var girl = ["Akosua", "Adwoa", "Abeena", "Akua", "Yaa", "Afua", "Ama"]
-  var days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
-  var date =
-    ((((century/4) - 2 * century - 1) + ((5 * year/4))
-              + ((26 * (month + 1) / 10) + day) % 7)-1;
-            }
-return date, sex;
-
-
-
-if (date === 0 && sex === male ) {
-  outputText = "Kwasi"
+function MakeArray(n) {
+   this.length = n;
+   for (var i = 1; i <=n; i++) {
+     this[i] = 0;
+   }
 }
-  var outputText = "your birthday is on " + date + ".";
-  saySomething(outputText);
+
+//Initialize malenames Array
+malenames = new MakeArray(7);
+malenames[1] = "Kwasi"
+malenames[2] = "Kwadwo"
+malenames[3] = "Kwabena"
+malenames[4] = "kwaku"
+malenames[5] = "Yaw"
+malenames[6] = "Kofi"
+malenames[7] = "Kwame"
 
 
-  document.getElementById('result').innerHTML = "<h1>Your name is:</h1><div class='alert alert-success'><h2>"akan name"</h2></div>"
+//Initialize Months Array
+months = new MakeArray(12);
+months[1] = "January"
+months[2] = "February"
+months[3] = "March"
+months[4] = "April"
+months[5] = "May"
+months[6] = "June"
+months[7] = "July"
+months[8] = "August"
+months[9] = "September"
+months[10] = "October"
+months[11] = "November"
+months[12] = "December"
 
-
-
-  var theBday = document.getElementById('resultBday');
-    theBday.innerHTML = multiply;
+//Day of Week Function
+function compute(form) {
+   var val1 = parseInt(form.day.value, 10)
+   if ((val1 < 0) || (val1 > 31)) {
+      alert("Day is out of range")
+   }
+   var val2 = parseInt(form.month.value, 10)
+   if ((val2 < 0) || (val2 > 12)) {
+      alert("Month is out of range")
+   }
+   var val2x = parseInt(form.month.value, 10)
+   var val3 = parseInt(form.year.value, 10)
+   if (val3 < 1900) {
+      alert("You're that old!")
+   }
+   if (val2 == 1) {
+      val2x = 13;
+      val3 = val3-1
+   }
+   if (val2 == 2) {
+      val2x = 14;
+      val3 = val3-1
+   }
+   var val4 = parseInt(((val2x+1)*3)/5, 10)
+   var val5 = parseInt(val3/4, 10)
+   var val6 = parseInt(val3/100, 10)
+   var val7 = parseInt(val3/400, 10)
+   var val8 = val1+(val2x*2)+val4+val3+val5-val6+val7+2
+   var val9 = parseInt(val8/7, 10)
+   var val0 = val8-(val9*7)
+   form.result1.value = months[val2]+" "+form.day.value +", "+form.year.value
+   form.result2.value = malenames[val0]
 }
