@@ -16,17 +16,19 @@ This is a website and has no setup Requirements once uploaded to the
 
 ## Known Bugs
 
-There are no know bugs at the moment
+The site only calcultes male names at the moment.
 
 ## Technologies Used
 
-Styled the website using some CSS
-The basic website was done on HTML
-The algorithim determining the name was written in JavaScript
+CSS
+HTML
+JavaScript
 
 ## Support and contact details
 
-If you have any issues or questions you can contac me at demahom93@gmail.com
+If you have any issues or questions you can contac me at
+
+demahom93@gmail.com
 
 ### License
 ....
