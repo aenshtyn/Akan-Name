@@ -1,15 +1,74 @@
 <!DOCTYPE html>
 <html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src = "js/akanscripts.js"></script>
+
+  <title>Akan Name Generator</title>
+
   <head>
-    <meta charset="utf-8">
-    <title>Week 2 Project</title>
-     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-     <html>
-       <head>
-         <title>Calculator</title>
-       </head>
-       <body>
-         <h1>Calculator</h1>
-         <script src="js/scripts.js"></script>
-       </body>
-     </html>
+    <title>Akan Name Generator</title>
+  </head>
+  <body>
+    <div class ="container">
+
+      <div class = "jumbotron">
+
+
+        <h1> Akan Names</h1>
+        <p>Akan (Twi, Asante) names are the names used by the Akan people of Ghana
+          and the Ivory Coast, who are frequently naming their baby boys and baby
+          girls after the day of the week in which they were born and the order of
+          birth for each of them. More on Akan names can be found
+          on <a href="https://en.wikipedia.org/wiki/Akan_names"/> Wikipedia <a/>
+        </p>
+      </div>
+
+      <div class = "jumbotron">
+        <h1> Akan Name Generator </h1>
+        <p>Here we will try to get own Akan names. Kindly provide the information as
+          needed below so that we can calculate and get you your akan name</p>
+
+          <form>
+            <p>On what day of the week were you born?</p>
+            <b>
+
+            <p>Enter your birthday and Gender</b> (then hit the &quot;Update&quot; button):</p>
+
+            <form>
+              <p>Numeric Month (1-12): <input TYPE="text" NAME="month" SIZE="2"> </p>
+              <p>Day of Month (1-31): <input TYPE="text" NAME="day" SIZE="2"> </p>
+              <p>Year (eg. 1960): <input TYPE="text" NAME="year" SIZE="4"> </p>
+              <p>Male <input type="radio" name="gender" value="male" id= "male" required></p>
+              <p>Female <input type="radio" name="gender" value="female" id = "female" required></p>
+              <p><input TYPE="button" VALUE="Update" ONCLICK="compute(this.form)"> <input TYPE="reset"
+              VALUE="Clear"> </p>
+              <p>Date of Birth: <input TYPE="text" NAME="result1" SIZE="18"> </p>
+              <p>Akan Name: <input TYPE="text" NAME="result2" SIZE="18"> </p>
+            </form>
+
+    </form>
+
+
+
+
+        <div class=" jumbotron">
+
+          <h1>Feedback</h1>
+          <form action="/action_page.php" id="usrform">
+            Name: <input type="text" name="username">
+
+          </form>
+          <br>
+          <textarea rows="5 rem" cols="50rem" name="comment" form="usrform"> You can type here. ...</textarea>
+          <br><input type="submit"></br>
+
+
+
+        </div>
+      </div>
+</div>
+</html>

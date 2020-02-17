@@ -1,0 +1,50 @@
+
+
+h1 {
+  color: #daa520;
+  text-align: center;
+}
+.nav {
+  background-color: #daa520;
+  list-style-type: none;
+  padding: .0;
+  margin-bottom: 1rem;
+  border-radius: .01rem;
+}
+
+.nav li {
+  display: inline-block;
+  font-size: 20px;
+  font-family: serif;
+  padding: 20px;
+  text: #daa520;
+}
+.jumbotron {
+  padding: 2rem 1rem;
+  margin-bottom: 1rem;
+  background-color: #e9ecef;
+  border-radius: 2rem;
+
+}
+
+.jumbotron2 {
+  padding: 2rem 1rem;
+  margin-bottom: 1rem;
+  background-color: #e9ecef;
+  border-radius: 1rem;
+}
+li {
+  color:
+}
+.column2 {
+  float: right;
+  width: 33.33%;
+}
+.nameGenerator {
+  width: 2rem 2rem;
+  padding: 25px;
+  border-radius: 1rem;
+  font-size: 25px;
+  text-align: justify;
+
+}
