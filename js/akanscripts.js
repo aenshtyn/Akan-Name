@@ -1,6 +1,4 @@
 function akanName(){
-
-
   var bday = document.getElementById("birthday").value;
   var Bdate = bday.toString();
   var century = Bdate.substring (0,2);
@@ -12,7 +10,7 @@ function akanName(){
   var girl = ["Akosua", "Adwoa", "Abeena", "Akua", "Yaa", "Afua", "Ama"]
   var date =
     ((((century/4) - 2 * century - 1) + ((5 * year/4))
-              + ((26 * (month + 1) / 10) + day) % 7)
+              + ((26 * (month + 1) / 10) + day) % 7)-1;
             }
 return date, sex;
 
@@ -25,7 +23,7 @@ if (date === 0 && sex === male ) {
   saySomething(outputText);
 
 
-  document.getElementById('result').innerHTML = "<h1>My name is:</h1><div class='alert alert-success'><h2>"akan name"</h2></div>"
+  document.getElementById('result').innerHTML = "<h1>Your name is:</h1><div class='alert alert-success'><h2>"akan name"</h2></div>"
 
 
 
